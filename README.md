@@ -1,12 +1,16 @@
 # TABLE GRID
 ## Description
 Implementing ag-grid with boostrap5
+
+demo https://program09.github.io/tableGrid/
 ## Implementation
 1. Download the project from GitHub, import files in your project.
 2. Add the following files in your project.
     ```html
-        <link rel="stylesheet" href="tableGrid.css">
-        <script src="tableGrid.js"></script>
+        <link rel="stylesheet" href="https://program09.github.io/tableGrid/tableGrid.css">
+        <script src="https://program09.github.io/tableGrid/tableGrid.js"></script>
+
+    
     ```
 
 ## Inilialize default
