@@ -11,7 +11,10 @@ This is a implementation of AG-GRID in js and Bootstrap5.
         <script src="tableGrid.js"></script>
     ```
 
-## inilialize default
+## Inilialize default
+```html
+    <div id="ag-grid" class="ag-grid"></div>
+```
 ```js
     const table = new AgGridTable({
         containerId: "ag-grid", // ID of the container
@@ -23,14 +26,14 @@ This is a implementation of AG-GRID in js and Bootstrap5.
         statusCol: {
             show:true, // Show status column
             active: 'Active', // Value checked switch
-            type: 'badge', // Switch, badge
+            type: 'badge', // Switch -> per two statuses, badge per any statuses
             statuses: data // Dictionari of values statuses
         },
         filterCol: true, // Show filter column
         actions: {
             show:true, // Show actions column
             position: "end", // Start, end
-            none: ['edit'] // Hide actions: edit, delete  default []
+            none: [] // Hide actions: edit, delete  default [] ?? ['edit', 'delete']
         }, 
         paginationDefault: {
             pagination: true, // Show pagination

@@ -32,7 +32,7 @@ const table = new AgGridTable({
     actions: {
         show:true, // Show actions column
         position: "end", // Start, end
-        none: ['edit'] // Hide actions: edit, delete  default []
+        none: [] // Hide actions: edit, delete  default ['edit', 'delete']
     }, 
     paginationDefault: {
         pagination: true, // Show pagination
