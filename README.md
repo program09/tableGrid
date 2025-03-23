@@ -1,11 +1,9 @@
 # TABLE GRID
 ## Description
-This is a implementation of AG-GRID in js and Bootstrap5.
-
+Implementing ag-grid with boostrap5
 ## Implementation
-1. Download the project from github, import files in your project.
+1. Download the project from GitHub, import files in your project.
 2. Add the following files in your project.
-
     ```html
         <link rel="stylesheet" href="tableGrid.css">
         <script src="tableGrid.js"></script>
@@ -136,7 +134,7 @@ Muestra la cantidad de registros seleccionados en un botón, recibe el id del bo
 ```
 
 ### Show selected rows real time
-Muetra la cantidad de registros seleccionados en tiempo real. y los muestra en un contenedor
+Muestra la cantidad de registros seleccionados en tiempo real. y los muestra en un contenedor
 ```html
     <div id="del-selected">
         <span>0</span>
@@ -171,7 +169,7 @@ Buscar por valor, recibe un valor para buscar, por defecto busca en todos los ca
 
 ### Export to excel
 Descargar la tabla en excel, recibe un array de columnas a ocultar, por defecto no oculta ninguna columna
-Incluir en el html el siguiente script
+, Incluir en el html el siguiente script
 ```html
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
 ```
@@ -182,7 +180,7 @@ Incluir en el html el siguiente script
 ```
 ### Export to PDF 
 Descargar la tabla en pdf, recibe un array de columnas a ocultar, por defecto no oculta ninguna columna
-Incluir en el html el siguiente script
+, Incluir en el html el siguiente script
 ```html
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
@@ -221,13 +219,3 @@ Obtener todas las filas seleccionadas, retorna un array de filas seleccionadas
 ```js
     table.getSelectedRows()
 ```
-
-
-
-
-
-
-
-
-
-
