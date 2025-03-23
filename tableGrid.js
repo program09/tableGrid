@@ -23,7 +23,7 @@ class AgGridTable {
         this.filterCol = filterCol;
         this.paginationDefault = {
             pagination: true,
-            Size: 10,
+            size: 10,
             useApi: false,
             ...paginationDefault
         };
@@ -132,7 +132,7 @@ class AgGridTable {
             rowData: null,
             columnDefs: processedColumnDefs,
             pagination: paginated,
-            paginationPageSize: this.paginationDefault.Size,
+            paginationPageSize: this.paginationDefault.size,
             paginationPageSizeSelector: [5, 10, 15, 20, 100],
             defaultColDef: {flex:1, filter: this.filterCol, minWidth: 200},
             domLayout: "autoHeight",

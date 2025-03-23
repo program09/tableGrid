@@ -16,13 +16,29 @@ const columnDefs = [
 ];
 
 const table = new AgGridTable({
-    containerId: "ag-grid",
-    columnDefs: columnDefs,
-    selectable: {show: true, type: "multiRow"},
-    statusCol: {show:true,active: 'Active', type: 'badge', statuses: data},
-    filterCol: true,
-    actions: {show:true,position: "end"},
-    paginationDefault: {useApi: false}
+    containerId: "ag-grid", // ID of the container
+    columnDefs: columnDefs, // Column definitions
+    selectable: {
+        show: true, // Show selectable column
+        type: "multiRow" //simpleRow, multiRow
+    },
+    statusCol: {
+        show:true, // Show status column
+        active: 'Active', // Value checked switch
+        type: 'badge', // Switch, badge
+        statuses: data // Dictionari of values statuses
+    },
+    filterCol: true, // Show filter column
+    actions: {
+        show:true, // Show actions column
+        position: "end", // Start, end
+        none: ['edit'] // Hide actions: edit, delete  default []
+    }, 
+    paginationDefault: {
+        pagination: true, // Show pagination
+        size: 10, // Size per page
+        useApi: false // Use api pagination
+    } 
 });
 
 // Función para generar datos de prueba
