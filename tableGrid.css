@@ -1,0 +1,56 @@
+.ag-cell-value > span {
+    margin-bottom: 0;
+}
+
+.ag_value_render {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    z-index: 999999;
+}
+
+.ag_value_render > * {
+    margin: 0;
+}
+
+.ag_value_render .form-switch {
+    height: 0px;
+    padding: 0px   !important ;
+    margin: 0px !important;
+}
+.ag_value_render .form-switch .form-check-input {
+    width: 40px;
+    height: 23px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.ag-body {
+    height: auto !important;
+    overflow: auto;
+}
+
+.ag-row {
+    display: block !important;
+    position: relative !important;
+    min-height: 50px !important;
+}
+
+.ag-cell-value {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.ag-row-position-absolute {
+    position:  relative !important;
+    transform:translateY(0) !important;
+}
+
+.ag-center-cols-container, .ag-center-cols-viewport {
+    height: 100% !important;
+}
